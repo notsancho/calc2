@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-function DigitButtons(props) {
-    const digits = [
-        7, 8, 9,
-        4, 5, 6,
-        1, 2, 3,
-        '', 0, ''
-    ];
+const digits = [
+    7, 8, 9,
+    4, 5, 6,
+    1, 2, 3,
+    '', 0, ''
+];
 
+function DigitButtons(props) {
     return (
         <div className="wrapper-digits">
             {digits.map((index, key) => (
